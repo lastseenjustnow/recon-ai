@@ -1,0 +1,691 @@
+[
+  {
+    "video_id": "VID_20250928_022858_ATM_003",
+    "atm_id": "ATM_003",
+    "timestamp": "2025-09-28T02:28:58.786326",
+    "duration_seconds": 20,
+    "scenario_type": "fraud",
+    "person_detections": {
+      "count": 3,
+      "face_visible": false,
+      "confidence": 0.9584698829080606
+    },
+    "behavioral_analysis": {
+      "suspicious_score": 0.911425579448389,
+      "anomaly_detected": true,
+      "actions_sequence": [
+        "approach",
+        "hood_up",
+        "multiple_cards",
+        "rapid_deposits",
+        "lookout_behavior",
+        "flee"
+      ]
+    },
+    "frame_annotations": [
+      {
+        "frame_number": 0,
+        "timestamp_offset": 0.0,
+        "action": "approach",
+        "objects_detected": [
+          "person",
+          "atm_machine"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "forward",
+          "arm_position": "at_side",
+          "stance": "relaxed"
+        },
+        "confidence": 0.7993375367860323
+      },
+      {
+        "frame_number": 119,
+        "timestamp_offset": 3.966666666666667,
+        "action": "hood_up",
+        "objects_detected": [
+          "person",
+          "face_obstruction",
+          "hood"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "down",
+          "arm_position": "extended",
+          "stance": "normal"
+        },
+        "confidence": 0.7122841248873526
+      },
+      {
+        "frame_number": 239,
+        "timestamp_offset": 7.966666666666667,
+        "action": "multiple_cards",
+        "objects_detected": [
+          "person",
+          "card_stack",
+          "switching_cards"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "looking_around",
+          "arm_position": "at_side",
+          "stance": "relaxed"
+        },
+        "confidence": 0.80879714445916
+      },
+      {
+        "frame_number": 359,
+        "timestamp_offset": 11.966666666666667,
+        "action": "rapid_deposits",
+        "objects_detected": [
+          "person",
+          "cash_bundles",
+          "quick_motion"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "looking_around",
+          "arm_position": "covering",
+          "stance": "normal"
+        },
+        "confidence": 0.9043568980663942
+      },
+      {
+        "frame_number": 479,
+        "timestamp_offset": 15.966666666666667,
+        "action": "lookout_behavior",
+        "objects_detected": [
+          "multiple_persons",
+          "watching_behavior"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "down",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8554748868931008
+      },
+      {
+        "frame_number": 599,
+        "timestamp_offset": 19.966666666666665,
+        "action": "flee",
+        "objects_detected": [
+          "person",
+          "running",
+          "quick_exit"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "forward",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.802396319036979
+      }
+    ],
+    "environment": {
+      "lighting": "moderate",
+      "camera_angle": "overhead",
+      "obstruction": "none"
+    }
+  },
+  {
+    "video_id": "VID_20250927_095358_ATM_009",
+    "atm_id": "ATM_009",
+    "timestamp": "2025-09-27T09:53:58.786774",
+    "duration_seconds": 162,
+    "scenario_type": "normal",
+    "person_detections": {
+      "count": 1,
+      "face_visible": true,
+      "confidence": 0.8917333844226984
+    },
+    "behavioral_analysis": {
+      "suspicious_score": 0.15585465993062472,
+      "anomaly_detected": false,
+      "actions_sequence": [
+        "approach",
+        "insert_card",
+        "enter_pin",
+        "insert_cash",
+        "confirm",
+        "take_card",
+        "leave"
+      ]
+    },
+    "frame_annotations": [
+      {
+        "frame_number": 0,
+        "timestamp_offset": 0.0,
+        "action": "approach",
+        "objects_detected": [
+          "person",
+          "atm_machine"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "down",
+          "arm_position": "at_side",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8810028026873988
+      },
+      {
+        "frame_number": 809,
+        "timestamp_offset": 26.966666666666665,
+        "action": "insert_card",
+        "objects_detected": [
+          "person",
+          "hand",
+          "card",
+          "atm_slot"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "down",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8810211825917129
+      },
+      {
+        "frame_number": 1619,
+        "timestamp_offset": 53.96666666666667,
+        "action": "enter_pin",
+        "objects_detected": [
+          "person",
+          "hand",
+          "keypad"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "down",
+          "arm_position": "at_side",
+          "stance": "tense"
+        },
+        "confidence": 0.9172217198495398
+      },
+      {
+        "frame_number": 2429,
+        "timestamp_offset": 80.96666666666667,
+        "action": "insert_cash",
+        "objects_detected": [
+          "person",
+          "hand",
+          "cash_bundle",
+          "deposit_slot"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "forward",
+          "arm_position": "at_side",
+          "stance": "normal"
+        },
+        "confidence": 0.8173410733313301
+      },
+      {
+        "frame_number": 3239,
+        "timestamp_offset": 107.96666666666667,
+        "action": "confirm",
+        "objects_detected": [
+          "person",
+          "hand",
+          "screen"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "looking_around",
+          "arm_position": "extended",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8228464152089443
+      },
+      {
+        "frame_number": 4049,
+        "timestamp_offset": 134.96666666666667,
+        "action": "take_card",
+        "objects_detected": [
+          "person",
+          "hand",
+          "card"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "down",
+          "arm_position": "extended",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8589010761922271
+      },
+      {
+        "frame_number": 4859,
+        "timestamp_offset": 161.96666666666667,
+        "action": "leave",
+        "objects_detected": [
+          "person"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "looking_around",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8483102038011471
+      }
+    ],
+    "environment": {
+      "lighting": "moderate",
+      "camera_angle": "overhead",
+      "obstruction": "none"
+    }
+  },
+  {
+    "video_id": "VID_20250927_124558_ATM_004",
+    "atm_id": "ATM_004",
+    "timestamp": "2025-09-27T12:45:58.786852",
+    "duration_seconds": 38,
+    "scenario_type": "suspicious",
+    "person_detections": {
+      "count": 3,
+      "face_visible": false,
+      "confidence": 0.8936203824501457
+    },
+    "behavioral_analysis": {
+      "suspicious_score": 0.8099431873908596,
+      "anomaly_detected": true,
+      "actions_sequence": [
+        "approach",
+        "look_around",
+        "cover_keypad",
+        "multiple_attempts",
+        "quick_transaction",
+        "leave"
+      ]
+    },
+    "frame_annotations": [
+      {
+        "frame_number": 0,
+        "timestamp_offset": 0.0,
+        "action": "approach",
+        "objects_detected": [
+          "person",
+          "atm_machine"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "looking_around",
+          "arm_position": "at_side",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8057879249267643
+      },
+      {
+        "frame_number": 227,
+        "timestamp_offset": 7.566666666666666,
+        "action": "look_around",
+        "objects_detected": [
+          "person",
+          "head_turn"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "forward",
+          "arm_position": "at_side",
+          "stance": "tense"
+        },
+        "confidence": 0.7837375007303582
+      },
+      {
+        "frame_number": 455,
+        "timestamp_offset": 15.166666666666666,
+        "action": "cover_keypad",
+        "objects_detected": [
+          "person",
+          "hand_over_keypad",
+          "obstruction"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "down",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8007960037168815
+      },
+      {
+        "frame_number": 683,
+        "timestamp_offset": 22.766666666666666,
+        "action": "multiple_attempts",
+        "objects_detected": [
+          "person",
+          "multiple_cards",
+          "repeated_motion"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "down",
+          "arm_position": "extended",
+          "stance": "tense"
+        },
+        "confidence": 0.8889722399089942
+      },
+      {
+        "frame_number": 911,
+        "timestamp_offset": 30.366666666666667,
+        "action": "quick_transaction",
+        "objects_detected": [
+          "person"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "looking_around",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.783502772816004
+      },
+      {
+        "frame_number": 1139,
+        "timestamp_offset": 37.96666666666667,
+        "action": "leave",
+        "objects_detected": [
+          "person"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "down",
+          "arm_position": "extended",
+          "stance": "normal"
+        },
+        "confidence": 0.8818103831372326
+      }
+    ],
+    "environment": {
+      "lighting": "moderate",
+      "camera_angle": "front",
+      "obstruction": "none"
+    }
+  },
+  {
+    "video_id": "VID_20250926_052358_ATM_010",
+    "atm_id": "ATM_010",
+    "timestamp": "2025-09-26T05:23:58.786906",
+    "duration_seconds": 31,
+    "scenario_type": "fraud",
+    "person_detections": {
+      "count": 3,
+      "face_visible": false,
+      "confidence": 0.9470954025621817
+    },
+    "behavioral_analysis": {
+      "suspicious_score": 0.8769024351026286,
+      "anomaly_detected": true,
+      "actions_sequence": [
+        "approach",
+        "hood_up",
+        "multiple_cards",
+        "rapid_deposits",
+        "lookout_behavior",
+        "flee"
+      ]
+    },
+    "frame_annotations": [
+      {
+        "frame_number": 0,
+        "timestamp_offset": 0.0,
+        "action": "approach",
+        "objects_detected": [
+          "person",
+          "atm_machine"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "forward",
+          "arm_position": "covering",
+          "stance": "tense"
+        },
+        "confidence": 0.8881333755800944
+      },
+      {
+        "frame_number": 185,
+        "timestamp_offset": 6.166666666666667,
+        "action": "hood_up",
+        "objects_detected": [
+          "person",
+          "face_obstruction",
+          "hood"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "down",
+          "arm_position": "extended",
+          "stance": "relaxed"
+        },
+        "confidence": 0.7387713795257302
+      },
+      {
+        "frame_number": 371,
+        "timestamp_offset": 12.366666666666667,
+        "action": "multiple_cards",
+        "objects_detected": [
+          "person",
+          "card_stack",
+          "switching_cards"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "looking_around",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8947654899905649
+      },
+      {
+        "frame_number": 557,
+        "timestamp_offset": 18.566666666666666,
+        "action": "rapid_deposits",
+        "objects_detected": [
+          "person",
+          "cash_bundles",
+          "quick_motion"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "down",
+          "arm_position": "covering",
+          "stance": "normal"
+        },
+        "confidence": 0.8990223834493544
+      },
+      {
+        "frame_number": 743,
+        "timestamp_offset": 24.766666666666666,
+        "action": "lookout_behavior",
+        "objects_detected": [
+          "multiple_persons",
+          "watching_behavior"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "looking_around",
+          "arm_position": "extended",
+          "stance": "normal"
+        },
+        "confidence": 0.7081204250178504
+      },
+      {
+        "frame_number": 929,
+        "timestamp_offset": 30.966666666666665,
+        "action": "flee",
+        "objects_detected": [
+          "person",
+          "running",
+          "quick_exit"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "down",
+          "arm_position": "at_side",
+          "stance": "tense"
+        },
+        "confidence": 0.7986649619392366
+      }
+    ],
+    "environment": {
+      "lighting": "poor",
+      "camera_angle": "overhead",
+      "obstruction": "partial"
+    }
+  },
+  {
+    "video_id": "VID_20250928_105958_ATM_009",
+    "atm_id": "ATM_009",
+    "timestamp": "2025-09-28T10:59:58.786956",
+    "duration_seconds": 163,
+    "scenario_type": "normal",
+    "person_detections": {
+      "count": 1,
+      "face_visible": true,
+      "confidence": 0.970131344517544
+    },
+    "behavioral_analysis": {
+      "suspicious_score": 0.16929702635806165,
+      "anomaly_detected": false,
+      "actions_sequence": [
+        "approach",
+        "insert_card",
+        "enter_pin",
+        "insert_cash",
+        "confirm",
+        "take_card",
+        "leave"
+      ]
+    },
+    "frame_annotations": [
+      {
+        "frame_number": 0,
+        "timestamp_offset": 0.0,
+        "action": "approach",
+        "objects_detected": [
+          "person",
+          "atm_machine"
+        ],
+        "pose_estimation": {
+          "body_facing": "atm",
+          "head_position": "forward",
+          "arm_position": "at_side",
+          "stance": "tense"
+        },
+        "confidence": 0.8906626173518196
+      },
+      {
+        "frame_number": 814,
+        "timestamp_offset": 27.133333333333333,
+        "action": "insert_card",
+        "objects_detected": [
+          "person",
+          "hand",
+          "card",
+          "atm_slot"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "forward",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8171767140959694
+      },
+      {
+        "frame_number": 1629,
+        "timestamp_offset": 54.3,
+        "action": "enter_pin",
+        "objects_detected": [
+          "person",
+          "hand",
+          "keypad"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "down",
+          "arm_position": "covering",
+          "stance": "tense"
+        },
+        "confidence": 0.8003514187029688
+      },
+      {
+        "frame_number": 2444,
+        "timestamp_offset": 81.46666666666667,
+        "action": "insert_cash",
+        "objects_detected": [
+          "person",
+          "hand",
+          "cash_bundle",
+          "deposit_slot"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "looking_around",
+          "arm_position": "covering",
+          "stance": "relaxed"
+        },
+        "confidence": 0.7184720733777967
+      },
+      {
+        "frame_number": 3259,
+        "timestamp_offset": 108.63333333333334,
+        "action": "confirm",
+        "objects_detected": [
+          "person",
+          "hand",
+          "screen"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "forward",
+          "arm_position": "extended",
+          "stance": "normal"
+        },
+        "confidence": 0.7608452470720977
+      },
+      {
+        "frame_number": 4074,
+        "timestamp_offset": 135.8,
+        "action": "take_card",
+        "objects_detected": [
+          "person",
+          "hand",
+          "card"
+        ],
+        "pose_estimation": {
+          "body_facing": "away",
+          "head_position": "looking_around",
+          "arm_position": "extended",
+          "stance": "relaxed"
+        },
+        "confidence": 0.9172552588499677
+      },
+      {
+        "frame_number": 4889,
+        "timestamp_offset": 162.96666666666667,
+        "action": "leave",
+        "objects_detected": [
+          "person"
+        ],
+        "pose_estimation": {
+          "body_facing": "sideways",
+          "head_position": "down",
+          "arm_position": "extended",
+          "stance": "relaxed"
+        },
+        "confidence": 0.8051404922575486
+      }
+    ],
+    "environment": {
+      "lighting": "moderate",
+      "camera_angle": "side",
+      "obstruction": "none"
+    }
+  }
+]
