@@ -1,12 +1,22 @@
-import os
 from typing import List
 
+import json
+import os
 import requests
+
+from atm_recon_ai.postgres.postgres import write_to_pg
 
 OLLAMA_HOST = "http://127.0.0.1:11434"
 API_METHOD = "/api/generate"
-MODEL_TYPE = "gemma3:1b"
-MODEL_PROMPT = "Explain me this log: "
+MODEL_TYPE = "llama3.2"
+MODEL_PROMPT = """
+    Analyse the log and tell me whether the customer has completed the transaction without issues.
+    Set 'txn_result' as 'Failure' if there were any issues with transaction, otherwise success.
+    Retrieve the following values from the log:
+        1. txn_result
+        2. account_id
+        3. card_number
+"""
 
 def check_localhost(url):
     try:
@@ -40,7 +50,8 @@ def analyse_logs():
         payload = {
             "model": MODEL_TYPE,
             "prompt": MODEL_PROMPT + content,
-            "stream": False
+            "stream": False,
+            "format": "json",
         }
 
         # Send the POST request
@@ -50,7 +61,13 @@ def analyse_logs():
         if response.status_code == 200:
             # Parse the JSON response
             response_data = response.json()["response"]
-            print(response_data)
+            print(f"Model output: {response_data}")
+
+            output_json = json.loads(response_data)
+            if output_json["txn_result"] == "Failure":
+                print("Transaction failed, writing into Postgres...")
+                write_to_pg(output_json)
+                print("Output write completed.")
         else:
             print(f"Error: {response.status_code} - {response.text}")
 
